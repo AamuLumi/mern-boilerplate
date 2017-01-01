@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  overflow: hidden;
+  #scroll-container {
+    overflow-y: auto;
+    margin: 16px 16px;
+    height: ~"calc(100% - 40px)";
+    #view-container {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      .title {
+        margin-left: 32px;
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.little-text {
+  font-size: 0.8em;
+}
+
+.animated {
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -ms-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}

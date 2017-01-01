@@ -1,0 +1,29 @@
+{
+  "apps": [
+    {
+      "name": "XXX - API Server",
+      "script": "server.js",
+      "cwd": "server/",
+      "error_file": "../log/XXX_API_ERROR.log",
+      "out_file": "../log/XXX_API_OUT.log",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "watch": true,
+      "ignore_watch": [
+        "node_modules",
+        "log"
+      ]
+    },
+    {
+      "name": "XXX - WEB Server",
+      "script": "webserver.js",
+      "cwd": "app/",
+      "error_file": "../log/XXX_WEB_ERROR.log",
+      "out_file": "../log/XXX_WEB_OUT.log",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  ]
+}
